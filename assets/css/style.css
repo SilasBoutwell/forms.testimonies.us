@@ -10,6 +10,7 @@ body {
   height: 100%;
   z-index: 1;
   background-color: black;
+  display: flex;
 }
 
 body::before {
@@ -639,6 +640,36 @@ section {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   color: #2a2c39;
+}
+
+.question-container {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.question-item {
+  display: grid;
+  border: 1px solid #cf9645;
+  background-color: #dbbf98ef;
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #909090;
+}
+
+.question-title {
+  color: #333;
+}
+
+.question {
+  margin-bottom: 10px !important;
+}
+
+.submit {
+  justify-self: right;
+  font-size: 40px;
 }
 
 /*--------------------------------------------------------------
