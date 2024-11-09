@@ -13,6 +13,11 @@ body {
   display: flex;
 }
 
+input {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+}
+
 body::before {
   content: "";
   position: absolute;
@@ -648,6 +653,7 @@ section {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-bottom: 100px;
 }
 
 .question-item {
@@ -656,7 +662,8 @@ section {
   background-color: #dbbf98ef;
   padding: 30px;
   border-radius: 6px;
-  box-shadow: 0 0 10px #909090;
+  box-shadow: 0 0 12px #222;
+  max-width: 400px;
 }
 
 .question-title {
@@ -665,6 +672,19 @@ section {
 
 .question {
   margin-bottom: 10px !important;
+}
+
+.question-input {
+  background: none;
+  border: 1px solid #222;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.question-input:focus {
+  outline: none !important;
+  border-color: #ad721f;
+  box-shadow: 0 0 10px #ad721f;
 }
 
 .submit {
